@@ -1059,3 +1059,38 @@
         background: var(--ink);
         color: var(--bg-1);
     }
+
+    /* Stack date and link vertically on the right side */
+    .c-meta {
+        display: flex;
+        flex-direction: column;
+        /* Stacks items vertically */
+        align-items: flex-end;
+        /* Aligns date and link to the right edge */
+        gap: 0.25rem;
+        /* Spacing between date and link */
+        white-space: nowrap;
+    }
+
+    /* Date styling */
+    .c-date {
+        font-size: 0.85rem;
+        opacity: 0.7;
+    }
+
+    /* Link placed below, with a smaller font size */
+    .cert-link {
+        font-size: 0.725rem;
+        /* Reduced font size */
+        font-weight: 500;
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+        letter-spacing: 0.02em;
+        transition: opacity 0.2s ease;
+    }
+
+    .cert-link:hover {
+        opacity: 1;
+        text-decoration: underline;
+    }
